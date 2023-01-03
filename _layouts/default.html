@@ -12,7 +12,24 @@
 
 <!-- BEGIN NAVIGATION BAR -->
  
-body {
+
+
+<!-- END NAV BAR -->
+ 
+<!-- BEGIN BANNER -->
+<div class="container-fluid p-5 text-white text-center myBanner">
+ <h1>Learn Spanish</h1>
+  <p>Welcome to your learning journey!</p> 
+</div>
+<!-- END BANNER -->
+ 
+<div class="container mt-5">
+ {{ content }}
+</div>
+ 
+<head>
+<style>
+ body {
   margin: 0;
 }
 
@@ -49,23 +66,25 @@ li a:hover:not(.active) {
 
 <ul>
   <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">Vocabulary</a></li>
-  <li><a href="#contact">Grammar</a></li>
-  <li><a href="#about">Pronounciation</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
 </ul>
 
-<!-- END NAV BAR -->
- 
-<!-- BEGIN BANNER -->
-<div class="container-fluid p-5 text-white text-center myBanner">
- <h1>Learn Spanish</h1>
-  <p>Welcome to your learning journey!</p> 
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
 </div>
-<!-- END BANNER -->
- 
-<div class="container mt-5">
- {{ content }}
-</div>
+
 
 </body>
 </html>
