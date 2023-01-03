@@ -11,30 +11,49 @@
 <body>
 
 <!-- BEGIN NAVIGATION BAR -->
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav notranslate">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="grammar.html">Grammar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="vocabulary.html">Vocabulary</a>
-        </li>
-       <li class="nav-item">
-          <a class="nav-link" href="pronunciation.html">Pronunciation</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+ 
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Vocabulary</a></li>
+  <li><a href="#contact">Grammar</a></li>
+  <li><a href="#about">Pronounciation</a></li>
+</ul>
+
 <!-- END NAV BAR -->
  
 <!-- BEGIN BANNER -->
