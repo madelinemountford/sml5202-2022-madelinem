@@ -2,15 +2,22 @@
 layout: default
 ---
 
+<html>
 <head>
 <style>
 body {
- ul {
+  margin: 0;
+}
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 25%;
   background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
 li a {
@@ -20,8 +27,12 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color on hover */
-li a:hover {
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
@@ -29,14 +40,27 @@ li a:hover {
 </head>
 <body>
 
-<ul>
+ <ul>
   <li><a href="#home">Home</a></li>
   <li><a href="#vocab">Vocabulary</a></li>
   <li><a href="#grammar">Grammar</a></li>
   <li><a href="#pronounciation">Pronounciaton</a></li>
 </ul>
 
-  </body>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
 
-<h1>Learn Spanish!</h1>
-<p> Welcome to this website</p>
+</body>
+</html>
+
