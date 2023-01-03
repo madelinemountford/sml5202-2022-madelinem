@@ -11,37 +11,12 @@
 <body>
 
 <!-- BEGIN NAVIGATION BAR -->
- 
-
-
-<!-- END NAV BAR -->
- 
-<!-- BEGIN BANNER -->
-<div class="container-fluid p-5 text-white text-center myBanner">
- <h1>Learn Spanish</h1>
-  <p>Welcome to your learning journey!</p> 
-</div>
-<!-- END BANNER -->
- 
-<div class="container mt-5">
- {{ content }}
-</div>
- 
-<head>
-<style>
- body {
-  margin: 0;
-}
-
-ul {
+ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 25%;
+  width: 200px;
   background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
 }
 
 li a {
@@ -51,12 +26,8 @@ li a {
   text-decoration: none;
 }
 
-li a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-li a:hover:not(.active) {
+/* Change the link color on hover */
+li a:hover {
   background-color: #555;
   color: white;
 }
@@ -64,27 +35,28 @@ li a:hover:not(.active) {
 </head>
 <body>
 
+
 <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#vocab">Vocabulary</a></li>
+  <li><a href="#grammar">Grammar</a></li>
+  <li><a href="#pronounciation">Pronounciaton</a></li>
 </ul>
 
-<div style="margin-left:25%;padding:1px 16px;height:1000px;">
-  <h2>Fixed Full-height Side Nav</h2>
-  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-  <p>Some text..</p>
-</div>
 
+<!-- END NAV BAR -->
+ 
+<!-- BEGIN BANNER -->
+<div class="container-fluid p-5 text-white text-center myBanner">
+ <h1>Spanish for Kids!</h1>
+  <p>Learning Spanish is fun!</p> 
+</div>
+<!-- END BANNER -->
+ 
+<div class="container mt-5">
+ {{ content }}
+</div>
+ 
 
 </body>
 </html>
