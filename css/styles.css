@@ -1,3 +1,5 @@
 .myBanner {
-    background-image: img src= https://www.shutterstock.com/image-vector/spain-flag-260nw-135427781.jpg;
+    background: #1d559d;
+    background-image: linear-gradient(from top, #AA151B, #F1BF00);
+    color: white;
 }
