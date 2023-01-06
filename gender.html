@@ -63,10 +63,51 @@ title: Gender
                 <li>la flor - the flower</li>
         </ol>
         </div>
-        <div class="row">
-        <div class="col-sm-12">     
+          
                         <p></p>
                         <p> These words either are defined by the subject of their gender, for example: the word 'el hombre' means 'the man', which would be masculine as it is describing a man, whereas 'la mujer' is feminine as it decribes a woman.</p>
                         <p>However some words you have to memorise the gender of these words as you learn them.</p>
-                        <p> Click the button below to randomly generate some words - then decide if they are masculine or feminine.
+                        <p> Click the button below to randomly generate some words - then decide if they are masculine or feminine.</p>
+        
+        <body>
+
+<h2>Random(ish) sentence generator</h2>
+
+
+<button id="myBtn">Make sentences</button>
+
+<p id="demo"></p>
+
+<script>
+
+myBtn.addEventListener("click", makeSentence);
+
+function makeSentence() {
+
+const person = {
+    names: [ "el coche - the car","la pelota - the ball", "los bloques - the blocks", " el globo - balloon","la mujer - the woman"],
+    
+    
+   
+};
+  
+var i;
+var text = "";
+for (i = 0; i < person.names.length; i++) {
+
+  name = person.names[i] 
+  text += name + " "<br>";
+  document.getElementById("demo").innerHTML = text;
+ }  
+}
+
+</script>
+
+
+
+</body>
+                                
+                                
+                                
+       
 
