@@ -50,14 +50,14 @@ title: Gender
        <div class="row">
 <div class="col-sm-6">  
         <ol>
-                <li><b>Masculine words</b><li>
+                <h1><b>Masculine words</b><h1>
                 <li>el hombre - the man</li>
                 <li>el coche - the car</li>
                 <li>el reloj - the clock</li>
         </ol>
         <div class="col-sm-6">          
         <ol>
-                <li><b>Feminine words</b><li>
+                <h1><b>Feminine words</b><h1>
                 <li>la mujer - the woman</li>
                 <li>la television - the televison </li>
                 <li>la flor - the flower</li>
@@ -74,7 +74,7 @@ title: Gender
 <h2>Random(ish) sentence generator</h2>
 
 
-<button id="myBtn">Make sentences</button>
+<button id="myBtn">Make words</button>
 
 <p id="demo"></p>
 
@@ -86,9 +86,6 @@ function makeSentence() {
 
 const person = {
     names: [ "el coche - the car","la pelota - the ball", "los bloques - the blocks", " el globo - balloon","la mujer - the woman"],
-    
-    
-   
 };
   
 var i;
@@ -96,7 +93,7 @@ var text = "";
 for (i = 0; i < person.names.length; i++) {
 
   name = person.names[i] 
-  text += name + " "<br>";
+  text += name " "<br>";
   document.getElementById("demo").innerHTML = text;
  }  
 }
