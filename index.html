@@ -15,6 +15,16 @@ title: Home
     <p>This website can help you to learn to speak and write Spanish to talk to people from all over the world!.</p>
     <p>With games, activities and lessons you can learn how to say 'Hola!' and 'Adios!' and everything inbetween.</p>
     <p>Impress your parents and friends with your new skills!</p>
+    
+    <p>Enter your name!: <input type="text" id="inputName"><button onclick="test3()">Submit</button></p>
+<p> <span id="output1"></span></p>
+
+<script>
+function test3() {
+  var yourName = document.getElementById("inputName").value;
+  document.getElementById("output1").innerHTML = "Hello " + yourName + ". Are you ready to learn?";
+}
+</script>
    <p><a href="vocab.html">Click here to start your learning adventure!</a></p>
  
     
