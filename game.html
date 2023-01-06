@@ -7,4 +7,71 @@ title: Games
 <p>Here are some fun games to help you memorise some of the helpful words</p>
 <br>
 
-<iframe src="https://madelinemountford.h5p.com/content/1291844900808770547/embed" width="1088" height="955" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *" aria-label="Spanosh words game"></iframe><script src="https://madelinemountford.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<h2>Games</h2>
+
+<button class="accordion">Memory Game</button>
+<div class="panel">
+ <iframe src="https://madelinemountford.h5p.com/content/1291844900808770547/embed" width="1088" height="955" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *" aria-label="Spanosh words game"></iframe><script src="https://madelinemountford.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>
+</div>
+
+<button class="accordion">Crossword</button>
+<div class="panel">
+  <iframe src="https://madelinemountford.h5p.com/content/1291844917343227277/embed" width="1088" height="909" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *" aria-label="Crossword"></iframe><script src="https://madelinemountford.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>
+</div>
+
+<button class="accordion">Gap Fill</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
